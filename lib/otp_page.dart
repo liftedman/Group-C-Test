@@ -57,13 +57,14 @@ class OtpPage extends StatelessWidget {
           decoration: BoxDecoration(color: Colors.green,),
         )
         )
-        
-        Text(
+      
+        Text (
           'Verify',
+          Color: Color.fromARGB(255, 236, 32, 5) 
           style: TextStyle(
             fontSize: 20.0,
           ),
-        )
+        ),
       ])),
     );
   }
