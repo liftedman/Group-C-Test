@@ -23,7 +23,7 @@ class OtpPage extends StatefulWidget {
             child: Text(
               'OTP code Verification',
               style: TextStyle(
-                fontWeight: FontWeight.bold,
+                fontWeight: FontWeight.normal,
                 fontSize: 30,
               ),
             ),
