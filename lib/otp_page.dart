@@ -6,29 +6,73 @@ class OtpPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        backgroundColor: Colors.transparent,
-        leading: IconButton(
-          onPressed: () {},
-          icon: Icon(Icons.arrow_back),
+        backgroundColor: const Color.fromARGB(255, 196, 245, 247),
+        appBar: AppBar(
+          backgroundColor: Colors.transparent,
+          leading: IconButton(
+            onPressed: () {},
+            icon: const Icon(
+              Icons.arrow_back,
+              color: Colors.black,
+            ),
+          ),
         ),
-      ),
-      body: Container(
-        child: Column(
-          children: [
-            Padding(
-              padding: const EdgeInsets.all(8.0),
+        body: Container(
+            child: Column(children: [
+          const Padding(
+              padding: EdgeInsets.all(8.0),
               child: Text(
                 'OTP code Verification',
                 style: TextStyle(
-                  fontWeight: FontWeight.bold,
-                  fontSize: 30,
+                  letterSpacing: 1.5,
+                  fontSize: 50,
                 ),
-              ),
-            )
-          ],
-        ),
-      ),
-    );
-  }
+              )),
+          const SizedBox(
+            height: 75.0,
+          ),
+          const Text(
+            'Code has been sent to +91 90901*',
+            style: TextStyle(
+              fontSize: 20,
+            ),
+          ),
+          const SizedBox(
+            height: 10.0,
+          ),
+          const SizedBox(
+            height: 100.0,
+          ),
+          const Text(
+            'Resend code in 45 s',
+            style: TextStyle(
+              fontSize: 20.0,
+            ),
+          ),
+          const SizedBox(
+            width: 50.0,
+            height: 130.0,
+          ),
+          Column(mainAxisAlignment: MainAxisAlignment.end, children: [
+            Padding(
+                padding: const EdgeInsets.all(4.0),
+                child: Container(
+                  width: 400,
+                  height: 50,
+                  decoration: BoxDecoration(
+                      color: const Color.fromARGB(226, 2, 184, 93),
+                      borderRadius: BorderRadius.circular(10)),
+                  child: const Center(
+                    child: Text(
+                      'Verify',
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 20,
+                      ),
+                    ),
+                  ),
+                ))
+          ])
+   ])));
+}
 }
