@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:pin_code_fields/pin_code_fields.dart';
 
 class OtpPage extends StatelessWidget {
   const OtpPage({super.key});
@@ -25,7 +26,14 @@ class OtpPage extends StatelessWidget {
                   fontSize: 30,
                 ),
               ),
-            )
+            ),
+            SizedBox(
+              height: 80,
+            ),
+            Text('Code has been send to +91 90901*****'),
+            SizedBox(
+              height: 20,
+            ),
           ],
         ),
       ),
