@@ -1,34 +1,41 @@
+
+
+// ignore_for_file: no_logic_in_create_state
+
 import 'package:flutter/material.dart';
 
-class OtpPage extends StatelessWidget {
+class OtpPage extends StatefulWidget {
   const OtpPage({super.key});
 
-  @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.transparent,
         leading: IconButton(
           onPressed: () {},
-          icon: Icon(Icons.arrow_back),
+          icon: const Icon(Icons.arrow_back),
         ),
       ),
-      body: Container(
-        child: Column(
-          children: [
-            Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: Text(
-                'OTP code Verification',
-                style: TextStyle(
-                  fontWeight: FontWeight.bold,
-                  fontSize: 30,
-                ),
+      body: const Column(
+        children: [
+          Padding(
+            padding: EdgeInsets.all(8.0),
+            child: Text(
+              'OTP code Verification',
+              style: TextStyle(
+                fontWeight: FontWeight.bold,
+                fontSize: 30,
               ),
-            )
-          ],
-        ),
+            ),
+          )
+        ],
       ),
     );
+  }
+  
+  @override
+  State<StatefulWidget> createState() {
+    // TODO: implement createState 
+    throw UnimplementedError();
   }
 }
