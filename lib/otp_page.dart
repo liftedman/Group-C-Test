@@ -6,7 +6,7 @@ class OtpPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        backgroundColor: const Color.fromARGB(255, 196, 245, 247),
+        backgroundColor: Color.fromARGB(255, 166, 253, 188),
         appBar: AppBar(
           backgroundColor: Colors.transparent,
           leading: IconButton(
